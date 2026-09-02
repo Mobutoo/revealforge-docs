@@ -1,0 +1,36 @@
+site_name: ExploCallout Documentation
+site_description: User documentation for ExploCallout, a numbered callouts and leader-lines asset for Blender, by RevealForge.
+site_url: https://docs.revealforge.com/
+repo_url: https://github.com/Mobutoo/revealforge-docs
+repo_name: revealforge-docs
+edit_uri: ""
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+  features:
+    - navigation.tabs
+    - navigation.top
+    - content.code.copy
+    - search.suggest
+
+nav:
+  - Home: index.md
+  - Quick Start: quick-start.md
+  - User Guide: guide.md
+  - Compatibility: compatibility.md
+  - FAQ: faq.md
+  - License: license.md
+  - Contact / Help: contact.md
+
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+
+extra:
+  social: []
