@@ -1,46 +1,45 @@
+<!-- source: products/callouts/dist/USER-GUIDE.md @ 8d3ef4e (timeout repo) -->
+
 # Quick Start
 
-The fastest path from "I have the package" to "I have a labeled scene."
+The fastest path from "I have the package" to "I have a labeled scene" —
+using the add-on. Prefer to work with the node group directly, without
+installing anything? See [Without the add-on](guide.md#without-the-add-on)
+in the User Guide instead.
 
-## 1. Install as an Asset Library (recommended)
+## 1. Install the add-on
 
-1. Put `explocallout.blend` and `blender_assets.cats.txt` in a folder you
-   control, e.g. `Documents/BlenderAssets/ExploCallout/`.
-2. In Blender, open **Edit > Preferences > File Paths > Asset Libraries**
-   and click **+** to add a library pointing at that folder.
-3. Open the **Asset Browser** in any 3D Viewport, pick your new library,
-   and you'll see the **TO_Callouts** node group under the **Callouts**
-   catalog.
-4. Drag the node group onto any mesh object in your scene, or use
-   **Add > Node Group** inside a Geometry Nodes modifier.
+In Blender, open **Edit > Preferences > Get Extensions**, click the
+dropdown next to the search field, and choose **Install from Disk**.
+Select `explocallout-1.0.0.zip` from the package and confirm. Blender
+installs and enables the add-on — nothing else to toggle on.
 
-Prefer Append/Link instead? See the full [User Guide](guide.md#installation)
-for that option.
+## 2. Open the panel
 
-## 2. Build an anchor points object
+In any **3D Viewport**, press **N** to open the side panel and look for
+the **ExploCallout** tab.
 
-Create a single **Mesh** object where each vertex sits at a part's
-world-space origin (keep the object's own transform at Location
-`(0, 0, 0)`, Rotation `0`, Scale `1`). Add a `Float Vector` attribute
-named `label_offset` on that mesh — one vector per point, pointing from
-the anchor toward where you want its label to sit.
+## 3. Apply Callouts
 
-## 3. Apply the node group
+Leave **Scope** on **Scene** to label every eligible mesh, or set it to
+**Selected** and select just the parts you want. Click **Apply
+Callouts** — in one step it numbers your parts, builds the anchor
+points, applies `TO_Callouts`, adds the numbered labels, and frames a
+preview camera.
 
-Add `TO_Callouts` as a Geometry Nodes modifier on the anchor points
-object, then adjust **Marker Radius** and **Leader Radius** to match
-your scene scale.
+## 4. Adjust
 
-## 4. Add numbered labels
+Tweak **Label Distance**, **Label Spread**, **Tiers**, **Marker
+Radius**, **Leader Radius**, and **Text Height**, then click **Apply
+Callouts** again to rebuild with the new values. Drag a label to a
+better spot, then click **Sync Leaders** to follow it. Pick a camera
+preset (**Hero**, **Overhead**, **Flank**) and an aspect ratio, then
+click **Frame Camera** to reframe.
 
-Add a Text object at each label position, with a **Track To** constraint
-pointing at your camera, so numbers stay readable as you reframe.
+## 5. Render
 
-## 5. Inspect the example
+Press **F12**. The add-on never writes a render file on its own — it
+only sets up the scene for your usual render step.
 
-The package ships with a worked 6-part assembly example — open it and
-look at the anchor points object and modifier stack to see a known-good
-reference before building your own.
-
-For the full explanation of how the node group works, known limits, and
-a FAQ, see the [User Guide](guide.md).
+For the full explanation of every panel option, the manual node-group
+workflow, known limits, and a FAQ, see the [User Guide](guide.md).

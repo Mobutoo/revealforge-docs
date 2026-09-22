@@ -1,38 +1,39 @@
-<!-- source: products/callouts/dist/PACKAGING.md @ d72248d (timeout repo, internal build/QA doc) -->
+<!-- source: products/callouts/dist/USER-GUIDE.md @ 8d3ef4e (timeout repo) -->
 
 # Compatibility
 
 ## Supported Blender versions
 
-| Blender version | Status |
-|---|---|
-| **4.5 LTS** (tested on 4.5.13 LTS) | Supported — built and tested. |
-| **5.2 LTS** (tested on 5.2.1 LTS) | Supported — verified via automated QA, including the full 40-case regression sweep. |
-
-Earlier 4.x versions with Geometry Nodes and the Asset Browser will
-likely work but have not been verified.
+| Blender version | Status | How it's verified |
+|---|---|---|
+| **4.5 LTS** (tested on 4.5.13 LTS) | Tested | Automated 40-case regression suite, plus packaging and extension-manifest checks. Last run 22 Sep 2026. |
+| **5.2 LTS** (tested on 5.2.1 LTS) | Tested | Same automated suite; the `.blend` file (built under 4.5.13 LTS) opens and passes under 5.2.1 LTS. Last run 22 Sep 2026. |
+| Blender 4.2 – 4.4, and other 4.5.x / 5.x releases | Installs, not tested | The add-on's manifest declares a minimum of Blender 4.2 (the first version with the extension system), so Blender will install it. No test pass has been run on these versions. |
+| Earlier than 4.2 | Not supported | No extension system to install the add-on into. The node group on its own (Append/Link, without the add-on) has not been tested on these versions either. |
 
 ## What this covers
 
-ExploCallout ships as a native `.blend` asset library — the
-`TO_Callouts` Geometry Nodes node group, its bundled example scene, and
-the asset catalog file. It is not a Python add-on, so there is no
-extension-system compatibility risk to track separately from the
-Blender version itself.
+ExploCallout ships two components:
 
-The `.blend` file included in the package opens, applies, and passes
-the full automated regression sweep cleanly on both 4.5.13 LTS and
-5.2.1 LTS — no re-download or version-specific package variant is
-needed.
+- **The add-on** (`explocallout-1.0.0.zip`) — a Blender extension
+  (GPL-3.0-or-later) that requires Blender's extension system, available
+  from Blender 4.2 onward.
+- **`explocallout.blend`** — the `TO_Callouts` Geometry Nodes node
+  group, its bundled example scene, and the asset catalog file. This
+  works with Append/Link/Asset Library on its own, with or without the
+  add-on installed.
+
+The add-on is optional but recommended — see the [User Guide](guide.md)
+for the difference between the two ways of using the package.
 
 ## Format and rendering
 
-- **Format:** native `.blend` asset library (Geometry Nodes node group,
-  cataloged for the Asset Browser) + example scene.
+- **Format:** Blender extension (add-on) + native `.blend` asset
+  (Geometry Nodes node group, cataloged for the Asset Browser) + example
+  scene.
 - **Renderer:** works with any Blender render engine (EEVEE, Cycles,
   Workbench) — the callouts are geometry and text objects, not
   engine-specific effects.
-- **No external add-on, plugin, or paid dependency required.**
 
 ## Questions about your specific setup
 

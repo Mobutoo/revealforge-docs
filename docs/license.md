@@ -1,47 +1,38 @@
-<!-- source: products/callouts/dist/LICENSE @ 8edbaa2 (timeout repo) -->
+<!-- source: products/callouts/dist/LICENSING.md @ 8d3ef4e (timeout repo) -->
 
 # License
 
-This is the license that ships with your purchase, reproduced here for
-reference. The copy included in the package (`LICENSE`) is the
-authoritative version.
+The package ships two components, each under its own license. The files
+included in your package are the authoritative version — this page is a
+summary, not a substitute for reading them.
 
-## 1. Package content covered by this license
+## The add-on — GPL-3.0-or-later
 
-- `explocallout.blend` (the `TO_Callouts` Geometry Nodes asset, the
-  bundled example scene, the generated preview image), and
-- the User Guide, store listing copy, and any other documentation
-  shipped alongside the package.
+`explocallout-1.0.0.zip` is a Blender extension that uses Blender's
+Python API. It ships under **GPL-3.0-or-later**, source included. The
+full license text is in the zip (`LICENSE`) and also included in the
+package as `explocallout-LICENSE-GPL.txt`. Per the GPL, this license
+passes through to you: you can read, modify, and redistribute the
+add-on's source under the same terms.
 
-This package does not ship a separate Python (`.py`) add-on or script
-to the customer — it is a pure `.blend` asset library.
+## The `.blend` file and documentation — commercial license
 
-## 2. Royalty-free commercial use license
+`explocallout.blend` (the `TO_Callouts` Geometry Nodes node group and
+the bundled example scene) and the accompanying documentation are
+covered by a separate, royalty-free commercial license. **The exact
+terms are in the `LICENSE` file included with your package** — that
+file is the authoritative source for what you can and can't do with
+these files; this page does not restate it.
 
-Subject to the payment of the applicable purchase price, the copyright
-holder (RevealForge) grants each individual purchaser a non-exclusive,
-worldwide, royalty-free license to:
+## Which license applies to what
 
-- use the asset in an unlimited number of personal and commercial
-  Blender projects, including projects sold or delivered to clients
-  (renders, videos, animations, technical documentation produced with
-  the asset);
-- modify the node group, example scene, and any derivative renders for
-  the purchaser's own project needs.
-
-The purchaser may **not**:
-
-- resell, sublicense, or redistribute the `.blend` file itself (or the
-  `TO_Callouts` node group in isolation) as a standalone asset,
-  template, or competing product, whether for free or for a fee;
-- claim authorship of the original asset when redistributing derivative
-  marketing material that primarily showcases the asset itself rather
-  than the purchaser's own project.
+| File | License |
+|---|---|
+| `explocallout-1.0.0.zip` (the add-on) | GPL-3.0-or-later — see `LICENSE` inside the zip, or `explocallout-LICENSE-GPL.txt` |
+| `explocallout.blend`, the example scene, this documentation | Commercial license — see the `LICENSE` file included with your package |
+| Renders and files you produce with the tool | Yours |
 
 ## Questions about license terms
 
-If you have a use case that isn't clearly covered above, reach out
-before you rely on it — see [Contact / Help](contact.md).
-
-Copyright &copy; 2026 RevealForge. All rights not explicitly granted
-above are reserved.
+If you have a use case that isn't clearly covered by the files above,
+reach out before you rely on it — see [Contact / Help](contact.md).
