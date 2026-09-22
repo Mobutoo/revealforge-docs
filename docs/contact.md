@@ -1,4 +1,4 @@
-<!-- source: products/callouts/dist/USER-GUIDE.md @ 8d3ef4e (timeout repo) -->
+<!-- source: ExploCallout USER-GUIDE 1.0.0, synced 2026-09-22 -->
 
 # Contact / Help
 
@@ -6,9 +6,7 @@
 
 `support@revealforge.com`
 
-We aim to respond within **48 business hours** (Monday–Friday, excluding
-public holidays). This is a small, focused product line — email is the
-fastest and most reliable way to reach us.
+This is a small, focused product line — email is how to reach us.
 
 ## Before you write in, please have ready
 
@@ -48,8 +46,6 @@ To help us solve your issue on the first reply, include:
   unrelated to ExploCallout itself.
 
 ## Before buying
-
-<!-- À TRANCHER: canal/prix/remboursement (OP-10, vente directe) -->
 
 Purchase details, including where to buy and the refund policy, will be
 published here at launch. If you have a question before purchasing in

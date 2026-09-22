@@ -1,4 +1,4 @@
-<!-- source: products/callouts/dist/USER-GUIDE.md @ 8d3ef4e (timeout repo) -->
+<!-- source: ExploCallout USER-GUIDE 1.0.0, synced 2026-09-22 -->
 
 # FAQ
 
@@ -16,9 +16,9 @@ No, but it's recommended. The `TO_Callouts` node group works on its own
 as a native asset — append or link it like any other Blender asset
 (Options B/C in the [User Guide](guide.md#installation)), nothing to
 enable in Preferences. The add-on (Option A) is a companion tool,
-distributed separately (GPL-3.0-or-later, source included), that
-automates numbering, layout, and camera framing for you; skip it if
-you'd rather build the anchors and labels by hand.
+included in the package as a separate zip (GPL-3.0-or-later, source
+included), that automates numbering, layout, and camera framing for
+you; skip it if you'd rather build the anchors and labels by hand.
 
 ## What does it NOT do?
 
@@ -50,14 +50,10 @@ Yes, within the terms of the license included in the package — see
 
 ## How are updates handled?
 
-<!-- À TRANCHER: canal/prix/remboursement (OP-10, vente directe) -->
-
 Details on updates will be published here at launch. See
 [Contact / Help](contact.md) if you have a question in the meantime.
 
 ## What's your purchase and refund policy?
-
-<!-- À TRANCHER: canal/prix/remboursement (OP-10, vente directe) -->
 
 Purchase and refund details will be published here at launch. See
 [Contact / Help](contact.md) if you have a question before buying.

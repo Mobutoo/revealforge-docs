@@ -1,4 +1,4 @@
-<!-- source: products/callouts/dist/USER-GUIDE.md @ 8d3ef4e (timeout repo) -->
+<!-- source: ExploCallout USER-GUIDE 1.0.0, synced 2026-09-22 -->
 
 # User Guide
 
@@ -10,8 +10,9 @@ troubleshooting.
 
 - `explocallout-1.0.0.zip` — the ExploCallout add-on: a small Blender
   extension that automates numbering, layout, and camera framing from a
-  side panel. Optional, but it's the fastest way to use the asset (see
-  "How it works" below). Source included, GPL-licensed — see
+  side panel. Optional, but it's the recommended workflow to use the
+  asset (see "How it works" below). Source included, GPL-licensed —
+  see
   [License](license.md).
 - `explocallout.blend` — the asset file. It contains one asset: the
   `TO_Callouts` Geometry Nodes node group (marked in the Asset Browser
@@ -28,8 +29,8 @@ versions and how that's been verified.
 
 ## Installation
 
-The add-on is optional, but it's the fastest way to get consistent
-numbering, layout, and camera framing — Option A below. If you'd rather
+The add-on is optional, but it's the recommended workflow to get
+consistent numbering, layout, and camera framing — Option A below. If you'd rather
 work with the node group directly, Options B and C skip the add-on
 entirely. They aren't mutually exclusive: you can install the add-on and
 still append/link the node group into other files.
@@ -250,8 +251,7 @@ time (the add-on's **Check Layout** button checks this margin for you).
   dense cluster.
 - **No flat "profile" camera preset.** A near-0-degree elevation angle
   flattens the ring layout into a near-straight line and risks label
-  collisions — stick to a 3/4-style angle (see above). A future update
-  may add a dedicated safeguard for this case.
+  collisions — stick to a 3/4-style angle (see above).
 - **Apply Callouts rebuilds everything from scratch, every time.**
   Clicking **Apply Callouts** deletes and regenerates every marker,
   leader line, and label — including any you dragged into a custom

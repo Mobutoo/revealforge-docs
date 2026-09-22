@@ -1,4 +1,4 @@
-<!-- source: products/callouts/dist/USER-GUIDE.md @ 8d3ef4e (timeout repo) -->
+<!-- source: ExploCallout USER-GUIDE 1.0.0, synced 2026-09-22 -->
 
 # Compatibility
 
@@ -31,9 +31,8 @@ for the difference between the two ways of using the package.
 - **Format:** Blender extension (add-on) + native `.blend` asset
   (Geometry Nodes node group, cataloged for the Asset Browser) + example
   scene.
-- **Renderer:** works with any Blender render engine (EEVEE, Cycles,
-  Workbench) — the callouts are geometry and text objects, not
-  engine-specific effects.
+- **Renderer:** works with EEVEE, Cycles and Workbench — the callouts
+  are geometry and text objects, not engine-specific effects.
 
 ## Questions about your specific setup
 

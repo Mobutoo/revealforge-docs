@@ -1,4 +1,4 @@
-<!-- source: products/callouts/dist/LICENSING.md @ 8d3ef4e (timeout repo) -->
+<!-- source: ExploCallout USER-GUIDE 1.0.0, synced 2026-09-22 -->
 
 # License
 
